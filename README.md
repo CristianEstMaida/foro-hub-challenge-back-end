@@ -38,7 +38,6 @@
 - Documentación con Swagger
 - Paginación y ordenamiento
 - Pruebas unitarias con JUnit y Mockito
-- CI/CD con GitHub Actions
 
 ## 📸 Capturas de pantalla
 
@@ -60,3 +59,11 @@ src/
 ├── model/
 ├── dto/
 └── config/
+```
+
+## 👨‍💻 Autor
+
+Cristian Esteban Maida  
+Backend Developer | UTN Avellaneda  
+📍 Buenos Aires, Argentina  
+🔗 [LinkedIn](https://www.linkedin.com/in/cristian-esteban-maida)
