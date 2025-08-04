@@ -64,6 +64,6 @@ src/
 ## 👨‍💻 Autor
 
 Cristian Esteban Maida  
-Backend Developer | UTN Avellaneda  
+Backend Developer
 📍 Buenos Aires, Argentina  
 🔗 [LinkedIn](https://www.linkedin.com/in/cristian-esteban-maida)
