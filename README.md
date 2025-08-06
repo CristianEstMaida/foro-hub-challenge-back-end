@@ -1,6 +1,6 @@
-# Foro Hub Challenge Back End
+# 🧠 Foro Hub Challenge Back End
 
-🚀 Proyecto backend del Challenge de Alura Latam. Esta API REST permite la gestión de un foro educativo donde usuarios pueden crear, visualizar, actualizar y eliminar tópicos, además de interactuar mediante respuestas. El sistema implementa autenticación mediante JWT y maneja roles para controlar el acceso a los recursos.
+🚀 Proyecto backend del Challenge de Alura Latam. Esta API REST permite la gestión de un foro educativo donde usuarios pueden crear, visualizar, actualizar y eliminar tópicos, además de interactuar mediante respuestas. El sistema implementa autenticación mediante JWT, estructura modular escalable y pruebas unitarias. Actualmente, el rol implementado es `ROLE_USER`.
 
 ## 🧰 Tecnologías utilizadas
 
@@ -10,34 +10,56 @@
 - JPA + Hibernate
 - PostgreSQL
 - Maven
+- JUnit 5 + Mockito
+- Swagger
 
-## 📌 Funcionalidades
+## 📌 Funcionalidades principales
 
 - Crear un nuevo tópico `POST /topicos`
-- Listar todos los tópicos `GET /topicos`
+- Listar todos los tópicos con paginación `GET /topicos`
 - Ver un tópico específico `GET /topicos/{id}`
 - Editar un tópico `PUT /topicos/{id}`
 - Eliminar un tópico `DELETE /topicos/{id}`
-- Autenticación de usuarios con JWT
-- Roles para usuarios, moderadores y administradores
+- CRUD completo para usuarios (`/usuarios`) y respuestas (`/respuestas`)
+- Autenticación JWT
+- Rol único implementado: `ROLE_USER`
+- Exploración de endpoints vía Swagger
 
 ## 🧪 Validaciones y reglas de negocio
 
 - Verificación de campos obligatorios
-- Asociación del tópico y respuesta al autor autenticado
-- Control de acceso según roles
+- Asociación de tópicos y respuestas al autor autenticado
+- Control de acceso mediante anotaciones según rol
 
 ## 🔐 Seguridad
 
 - Autenticación con JWT
-- Roles: USER, MODERATOR, ADMIN
-- Protección de rutas mediante filtros y anotaciones
+- Rol actual: `ROLE_USER`
+- Protección de rutas con filtros y anotaciones
 
-## 🎯 Próximas mejoras
+## 📃 Documentación técnica
 
-- Documentación con Swagger
-- Paginación y ordenamiento
-- Pruebas unitarias con JUnit y Mockito
+- Integración con Swagger para exploración interactiva
+- Descripciones de endpoints, parámetros y respuestas
+
+## 🔄 Paginación y ordenamiento
+
+- Paginación integrada en `GET /topicos`
+- Orden configurable por parámetros de URL
+
+## 🧪 Testing unitario
+
+- Pruebas con JUnit 5 y Mockito
+- Validación de servicios, reglas de negocio y controladores
+
+## 📂 Estructura del proyecto
+
+```plaintext
+src/
+├── controller/
+├── domain/
+├── infra/
+```
 
 ## 📸 Capturas de pantalla
 
@@ -48,18 +70,6 @@
 *(Próximamente en YouTube)*
 
 ---
-
-## 📂 Estructura del proyecto
-
-```plaintext
-src/
-├── controller/
-├── service/
-├── repository/
-├── model/
-├── dto/
-└── config/
-```
 
 ## 👨‍💻 Autor
 
