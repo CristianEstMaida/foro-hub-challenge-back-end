@@ -25,9 +25,11 @@ public class Answer {
 
     @ManyToOne
     private Topic topic;
+    @Column(name = "fechaCreacion")
     private LocalDateTime creationDate = LocalDateTime.now();
 
     @ManyToOne
+    @JoinColumn(name = "autor")
     private User author = new User();
     private Boolean isSolution = false;
 }
